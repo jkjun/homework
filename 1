@@ -1,0 +1,18 @@
+<?php
+$string="а васька слушает да ест. а воз и ныне там. а вы друзья как ни садитесь, все в музыканты не годитесь. а король-то — голый.а ларчик просто открывался.а там хоть трава не расти.";
+$stringByPoint=explode(".",$string);
+foreach ($stringByPoint as $point)
+{
+if (!function_exists('mb_ucfirst') && extension_loaded('mbstring'))
+{ function mb_ucfirst($point, $encoding='UTF-8')
+     {
+         $point = mb_ereg_replace('^[\ ]+', '', $point);
+         $point = mb_strtoupper(mb_substr($point, 0, 1, $encoding), $encoding).
+                mb_substr($point, 1, mb_strlen($point), $encoding);
+         return $point;
+     }
+}$prob= mb_ucfirst($point) ;
+echo "$prob . &nbsp";
+}
+
+?>
