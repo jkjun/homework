@@ -1,0 +1,7 @@
+<?php
+$string="а васька слушает да ест. а воз и ныне там. а вы друзья как ни садитесь, все в музыканты не годитесь. а король-то — голый.а ларчик просто открывался.а там хоть трава не расти.";
+$stringByPoint=explode(".",$sring);
+foreach ($stringByPoint as $point)
+{$point=ucfirst "$point
+echo "$point".;
+}
